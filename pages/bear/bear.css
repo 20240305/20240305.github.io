@@ -1,0 +1,14 @@
+h2{
+    color: aqua;
+}
+.important_text{
+    color: red;
+    font-size: larger;
+}
+*{
+    font-size: large;
+}
+.outstanding-works{
+    color: brown;
+    font-size: large;
+}
