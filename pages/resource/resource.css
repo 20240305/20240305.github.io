@@ -1,0 +1,295 @@
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #292A2D;
+}
+div.navigation{
+    height: 51px;
+    background-color: #7ac4e9;
+    padding : 8px 20px;
+    margin: 5px;
+    align-items: center;
+    justify-content : space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    background-color:#323335CC;
+}
+div.navigation > a:first-child{
+    font-size: 0;
+    background-image: url("../../media/image/resource/resource_logo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+    margin: 0px 15px;
+    border-radius: 50%;
+    display: block;
+}
+div.navigation > a:last-child{
+    width:150px;
+    overflow: hidden;
+    /* 溢出的部分用三个省略号代替 */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* 设置字体颜色且消除下划线 */
+    color: #868889;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+}
+div.navigation > a:last-child img{
+    margin-right:10px;
+}
+span.navigation_items a{
+    margin: 30px;
+}
+a.catalogue{
+    width:80px;
+    height: 50px;
+    margin-top: 25px;
+    color: #E4EDF6;
+    text-decoration: none;
+}
+a.catalogue:hover{
+    color:#F04494;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+div.navigation > div{
+    background-color: #393B3E;
+    width: 35px;
+    height: 35px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+
+}
+div.navigation div.sponsor{
+    margin-left:200px;
+}
+.sponsor::after {
+    content: "请站长喝奶茶"; /* 设置要显示的文字 */
+    position: absolute; /* 绝对定位 */
+    bottom: -40%;
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 使其居中 */
+    background-color: rgba(48, 46, 46, 0.7); /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    padding: 5px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    visibility: hidden; /* 默认隐藏 */
+    opacity: 0; /* 默认透明 */
+    transition: opacity 0.5s; /* 过渡效果 */
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+}
+.sponsor:hover::after {
+    visibility: visible; /* 悬停时可见 */
+    opacity: 1; /* 悬停时不透明 */
+}
+.search::after {
+    content: "搜索"; /* 设置要显示的文字 */
+    position: absolute; /* 绝对定位 */
+    bottom: -40%;
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 使其居中 */
+    background-color: rgba(48, 46, 46, 0.7); /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    padding: 5px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    visibility: hidden; /* 默认隐藏 */
+    opacity: 0; /* 默认透明 */
+    transition: opacity 0.5s; /* 过渡效果 */
+    font-size: 12px;
+    text-align: center;
+    width: 30px;
+}
+.search:hover::after {
+    visibility: visible; /* 悬停时可见 */
+    opacity: 1; /* 悬停时不透明 */
+}
+.setting::after {
+    content: "设置"; /* 设置要显示的文字 */
+    position: absolute; /* 绝对定位 */
+    bottom: -40%;
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 使其居中 */
+    background-color: rgba(48, 46, 46, 0.7); /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    padding: 5px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    visibility: hidden; /* 默认隐藏 */
+    opacity: 0; /* 默认透明 */
+    transition: opacity 0.5s; /* 过渡效果 */
+    font-size: 12px;
+    text-align: center;
+    width: 30px;
+}
+.setting:hover::after {
+    visibility: visible; /* 悬停时可见 */
+    opacity: 1; /* 悬停时不透明 */
+}
+/* ---------------轮播图区域---------------------- */
+.carousel-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    margin: 30px;
+}
+.carousel-container > div:nth-child(2){
+    width: 1500px;
+    height: 400px;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../media/upload/resource/carousel_image.png");
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+}
+.carousel-container > div:nth-child(1){
+    background-image: url("../../media/image/resource/button.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(-90deg);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.carousel-container > div:nth-child(3){
+    background-image: url("../../media/image/resource/button.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+/* ----------------资源主要内容区域---------------- */
+/* ----------------------左边---------------------- */
+div.main_content{
+    height: 3000px;
+    margin: 0px 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+div.sort{
+    margin:10px 0px;
+}
+div.sort a{
+    color: #87898E;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+div.sort a:hover{
+    color: #F04494;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+div.left div.content > div{
+    background-color: #323335;
+    width: 920px;
+    height: 145px;
+    border-radius: 10px;
+    margin: 15px 5px;
+}
+div.main_content div.left div.content div{
+    display: flex;
+    align-items: center;
+}
+div.main_content div.left div.content div p{
+    color: #ffffff;
+}
+div.main_content div.left div.content img{
+    width: 200px;
+    height: 100px;
+    margin: 22px 30px;
+    border-radius: 10px;
+}
+div.main_content div.left div.content div.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+div.main_content div.left div.content a.item_title{
+    color:#ffffff;
+}
+div.main_content div.left div.content a.item_title:hover{
+    color:#F04494;
+    opacity: 0.8;
+    transform: translateY(-5px);
+    transition: 0.5s;
+
+}
+div.main_content div.left div.content div.text p{
+    color:#868889;
+    font-size: small;
+}
+/* ------------------右边--------------------- */
+div.right div.item_title{
+    border-left: #F04494 5px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+
+}
+div.right div.item_title p{
+    color: #ffffff; 
+}
+div.right div.search div:nth-child(2){
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323335;
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+}
+div.right input{
+    border : none;
+    background: none;
+    color: #8f9294;
+    outline: none;
+    /* 添加其他样式来替代轮廓，确保用户能知道哪个输入框是激活的 */
+    box-shadow: 0 0 0 2px transparent;
+    transition: box-shadow 0.2s;
+}
+div.right input:focus {
+    box-shadow: 0 0 0 2px #eb599d;  /* 使用更美观的焦点样式替代 */
+    border-radius: 5px;
+}
+div.right button{
+    border: none;
+    background: none;
+}
+div.right button img{
+    width: 30px;
+    height: 30px;
+}
+div.right div.sponsor img{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    opacity: 0.8;
+
+}
+
+
